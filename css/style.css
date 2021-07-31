@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1-3 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #3B506C;
+    line-height: 1.7;
+}
+
+/* header section  */
+header{
+    border-bottom: 2px solid #3b506c24;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 111111;
+}
+
+header .row {
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    flex-basis: 20%;
+}
+
+.logo a {}
+
+.logo a img {
+    width: 100px;
+}
+
+.menu {
+    width: 80%;
+    flex-basis: 80%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #3B506C;
+    font-weight: 700;
+    display: block;
+    padding: 20px 15px;
+    position: relative;
+    transition:all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+}
+.menu ul li a span{
+    display: block;
+    background: #3B506C;
+    width: 2px;
+    transform: translateY(-50%);
+    height: 25px;
+    transition:all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+}
+.menu ul li a:hover span{
+    width: 100%;
+}
+/* header section  */
+
+/* banner section  */
+.banner-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.banner-text {}
+
+.banner-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    position: relative;
+    color: #fbfbfb;
+    margin-bottom: 5px;
+}
+.banner-text h1 strong{
+    display: block;
+    width: 592px;
+    height: 52px;
+    background-color: #3b506c;
+    position: absolute;
+    right: 50%;
+    z-index: -1;
+    top: 8%;
+    transform: translate(50%,0);
+}
+
+.banner-text  span {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 45px;
+     position: relative;
+     color: #fbfbfb;
+}
+
+.banner-text  span b{
+    display: block;
+    width: 407px;
+    height: 49px;
+    background-color: #0c66ff;
+    position: absolute;
+    right: 50%;
+    z-index: -1;
+    top: 8%;
+    transform: translate(50%,0);
+}
+
+.banner-text p {
+    width: 60%;
+    margin: auto;
+    padding: 15px 0 20px 0;
+}
+
+.banner-img {
+    margin: auto;
+}
+
+.banner-img img {
+    width: 500px;
+}
+/* banner section  */
+
+/* feature-section  */
+.feature-section {
+    padding: 20px;
+}
+
+.feature-section .row {
+    justify-content: center;
+}
+
+.feature-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 1.15;
+    color: #3B506C;
+}
+
+.feature-left {
+    text-align: right;
+}
+
+.feature-left h2 {
+    color: #FC523C;
+}
+
+.feature-right {}
+/* feature-section  */
+
+/* blog-section  */
+.blog-section {
+    padding: 40px 0;
+}
+
+.post {
+    padding: 55px 30px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.illustration-5 {
+    background-color: #FDEBED;
+}
+
+.illustration-6 {
+    background-color: #EBF9F4;
+}
+
+.illustration-7 {
+    background-color: #FFF7E8;
+}
+
+.post img {height: 190px;display: block;margin: auto;}
+
+.post-text {
+    padding-top: 25px;
+}
+
+.post-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3B506C;
+    margin-bottom: 10px;
+}
+
+.post-text p {}
+
+.post:hover{
+    background-color: #fff;
+    box-shadow: 0px 8px 35px #d1d1d1;
+} 
+/* blog-section  */
+
+/* footer  */
+footer {
+    background-color: #008AFF;
+    padding: 20px 0;
+}
+
+.footer-text {
+    width: 100%;
+}
+
+.footer-text p {
+    color: #e0dede;
+    text-align: center;
+}
+
+.footer-text p strong {
+    text-transform: uppercase;
+    color: #fff;
+}
+/* footer  */
+
+/* sociallis */
+.sociallist {
+    list-style: none;
+    flex: 1 0 auto;
+    top: 50%;
+    position: fixed;
+    transform: translate(0,-50%);
+    flex-direction: column;
+    left: 2%;
+}
+.sociallist li {
+}
+.sociallist li a{
+    height: 40px;
+    background: #112b4e;
+    margin-bottom: 20px;
+    color: #fff;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    box-shadow: 5px 5px 10px #06060654;
+    justify-content: center;
+    border: 1px solid #112b4e;
+    transition: all 0.3s ease;
+}
+.sociallist li a:hover {
+    background: transparent;
+    color: #112b4e;
+}
+
+
+@media (max-width: 1250px) {
+    .container {
+        width: 1000px;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .banner-text h1 strong {
+        width: 490px;
+        height: 45px;
+    }
+
+    .banner-text span {
+        font-size: 35px;
+    }
+
+    .banner-text span b {
+        width: 340px;
+        height: 40px;
+    }
+
+    .banner-text p {
+        width: 70%;
+        padding: 15px 0;
+    }
+
+    .banner-img img {
+        width: 440px;
+    }
+
+    .feature-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .container {
+        width: 900px;
+    }
+
+    .col-1-3 {
+        padding: 15px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
+
+    .banner-text h1 strong {
+        width: 424px;
+        height: 35px;
+    }
+
+    .banner-text span {
+        font-size: 30px;
+    }
+
+    .banner-text span b {
+        width: 297px;
+        height: 35px;
+    }
+
+    .banner-text p {
+        width: 80%;
+        padding: 15px 0;
+    }
+
+    .banner-img img {
+        width: 440px;
+    }
+
+    .feature-section h2 {
+        font-size: 28px;
+    }
+
+    .post {
+        padding: 30px 15px;
+    }
+
+    .post-text h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sociallist li a {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 680px;
+    }
+
+    .col-1-3 {
+        padding: 15px;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .banner-section {
+        padding: 30px 0;
+    }
+
+    .banner-text p {
+        width: 90%;
+    }
+
+    .banner-img img {
+        width: 390px;
+    }
+
+    .feature-left {
+        text-align: center;
+    }
+
+    .feature-right {
+        text-align: center;
+    }
+
+    .feature-section h2 {
+        font-size: 28px;
+    }
+
+    .post {
+        padding: 30px 15px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .post-text {
+        padding-top: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 540px;
+    }
+
+    .col-1-3 {
+        padding: 15px;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .banner-section {
+        padding: 30px 0;
+    }
+
+    .banner-text p {
+        width: 90%;
+    }
+
+    .banner-img img {
+        width: 390px;
+    }
+
+    .feature-left {
+        text-align: center;
+    }
+
+    .feature-right {
+        text-align: center;
+    }
+
+    .feature-section h2 {
+        font-size: 28px;
+    }
+
+    .post {
+        padding: 30px 15px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .post-text {
+        padding-top: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .col-1-3 {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .menu ul {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+        padding: 20px 3px;
+    }
+
+    .menu ul li a:hover {
+        color: #3B506C;
+    }
+    .menu ul li a span{
+        display: none;
+    }
+
+    .banner-section {
+        padding: 30px 0;
+    }
+
+    .banner-text h1 {
+        font-size: 22px;
+    }
+
+    .banner-text h1 strong {
+        width: 295px;
+        height: 28px;
+    }
+
+    .banner-text span {
+        font-size: 22px;
+    }
+
+    .banner-text span b {
+        width: 205px;
+        height: 28px;
+    }
+
+    .banner-text p {
+        width: 95%;
+        padding: 10px 0;
+    }
+
+    .banner-img img {
+        width: 90%;
+    }
+
+    .feature-section {
+        padding: 10px 0;
+    }
+
+    .feature-left {
+        text-align: center;
+    }
+
+    .feature-right {
+        text-align: center;
+    }
+
+    .feature-section h2 {
+        font-size: 20px;
+    }
+
+    .blog-section {
+        padding: 10px 0;
+    }
+
+    .post {
+        width: 95%;
+        margin: auto;
+        padding: 20px 15px;
+    }
+
+    .post-text {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .post-text h3 {
+        font-size: 16px;
+    }
+
+    .sociallist {
+        flex-direction: row;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        position: static;
+        padding: 15px 0;
+        transform: unset;
+    }
+
+    .sociallist li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .sociallist li a {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+
+        
+}
+
+
